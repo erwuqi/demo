@@ -1,0 +1,32 @@
+{% extends 'basic.html' %}
+{% load staticfiles %}
+{% block title %}广州翔捷制冷设备有限公司{% endblock %}
+{% block headmessage %}
+    {{new.title}}
+{% endblock %}
+{% block content %}
+<div class="one_product_center">
+    <p class="product_name">双温双控冷水机</p>
+    <hr class="line_one" />
+    <hr class="line_two" />
+    <div class="product_img"><img src="{% static 'img/pro21000-3000W.jpg' %}" /><p class="proc_title">型号：XJ-D1000W&nbsp;XJ-D-2000W&nbsp;XJ-D-3000W</p></div>
+    <div class="product_img"><img src="{% static 'img/pro34000-6000W.jpg' %}" /><p class="proc_title">型号：XJ-D-4000W&nbsp;XJ-D-6000W</p></div>
+    <p class="proc_title">产品概述：</p>
+    <div class="proc_desc">
+        <p>
+            双温双控冷水机是一种能提两种循环用水温度的一体机，广泛应用于塑胶、电子制造、电镀、医药、化工、超声波冷却、印刷、数控等工业生产，
+            它能精确控制现代工业机械化生产所要求的温度，从而大大提高了生产效率和生产质量。
+        </p>
+    </div>
+    <p class="proc_title">产品特点：</p>
+    <div class="proc_desc">
+        <p>1.采用进口名牌谷轮压缩机，内置安全保护，噪音低，省电耐用，以增加设备的使用寿命。</p>
+        <p>2.采用高效翅片式冷凝器，具有换热效率高，外加高效外转子风机，无需接驳冷却塔系统等优点。</p>
+        <p>3.采用优质厚质水箱，内置自动补水和水位保护等装置，清洗维护方便快捷。</p>
+        <p>4.采用国内知名品牌水泵，流量大，噪音低，恒久耐用。</p>
+        <p>5.采用液晶微电脑控制器，能准确控制水温，中文界面，操作简单方便，控制功能齐全。</p>
+        <p>6.采用静电喷涂外壳，美观大方，方便使用和维护保养。</p>
+        <p>7.根据PID控制原理对整个控制系统进行偏差调节，从而使被控变量的实际值与工艺要求的预定值一致。</p>
+    </div>
+</div>
+{% endblock %}

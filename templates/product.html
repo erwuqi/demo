@@ -1,0 +1,16 @@
+{% extends 'basic.html' %}
+{% load staticfiles %}
+{% block title %}广州翔捷制冷设备有限公司{% endblock %}
+{% block headmessage %}
+    {{new.title}}
+{% endblock %}
+{% block content %}
+<div class="product_center">
+    <div class="product_img"><a href="/danwendankong"><img src="{% static 'img/pro1danwendankong.jpg' %}" /><p>单温单控冷水机</p></a></div>
+    <div class="product_img"><a href="/shuangwenshuangkong.html"><img src="{% static 'img/pro21000-3000W.jpg' %}" /><p>双温双控冷水机</p></a></div>
+    <div class="product_img"><a href="/jiguikongtiao.html"><img src="{% static 'img/jiguikongtiao.jpg' %}" /><p>机柜空调</p></a></div>
+    <div class="product_img"><a href="/hengwena.html"><img src="{% static 'img/hengwenlengshuiji.jpg' %}" /><p>恒温冷水机 Ⅰ 系</p></a></div>
+    <div class="product_img"><a href="/hengwenb.html"><img src="{% static 'img/hengwenlengshuiji2.jpg' %}" /><p>恒温冷水机 Ⅱ 系</p></a></div>
+    <div class="product_img"><a href="/haixianji.html"><img src="{% static 'img/haixianji.jpg' %}" /><p>海鲜机</p></a></div>
+</div>
+{% endblock %}

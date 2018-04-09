@@ -1,0 +1,31 @@
+{% extends 'basic.html' %}
+{% load staticfiles %}
+{% block title %}广州翔捷制冷设备有限公司{% endblock %}
+{% block headmessage %}
+    {{new.title}}
+{% endblock %}
+{% block content %}
+<div class="one_product_center">
+    <p class="product_name">机柜空调</p>
+    <hr class="line_one" />
+    <hr class="line_two" />
+    <div class="product_img"><img src="{% static 'img/hengwenlengshuiji2.jpg' %}" /><p class="proc_title">型号：XJ-G-1P</p></div>
+    <p class="proc_title">产品概述：</p>
+    <div class="proc_desc">
+        <p>
+            XJ-G系列是我司专门研发的用于冷却打标机的设备。恒温冷水机的工作原理是先向冷水机内不锈钢水箱中注入一定量的水，
+            通过冷水机的制冷系统将水冷却，再由冷水机的水泵施压将低温冷却的水传送至需冷却的半导体激光设备，
+            经过冷水机冷却过的水将打标机里的热量带走后，温度升高再回流到水箱中再经过冷水机的降温冷却循环，达到冷却的作用。
+        </p>
+    </div>
+    <p class="proc_title">产品特点：</p>
+    <div class="proc_desc">
+        <p>1.性能稳定，操作简单，维护方便。</p>
+        <p>2.循环水控温精度为±0.1℃。</p>
+        <p>3.配备电缆线，快速上电使用。</p>
+        <p>4.低温自动加热装置。</p>
+        <p>5.配置耐高压纯水过滤装置，确保管路无脏堵。</p>
+        <p>6.配备出水压力表，方便观察压力及流量。</p>
+    </div>
+</div>
+{% endblock %}

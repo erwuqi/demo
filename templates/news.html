@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% block title %}广州翔捷制冷设备有限公司{% endblock %}
+{% block content %}
+     {% for new in news %}
+           <div class="new_title">
+               <p><a href="/news/{{new.slug}}">{{new.title}}</a></p>
+           </div>
+           <div class="new_content" style="font-size:14px;">
+               {{ new.content | truncatechars:"500" | safe | striptags }}
+           </div>
+           <div class="new_pub_date">
+               <p style="background:#ccc;width:200px;height:15px;line-height:15px;">
+                    发布时间：{{ new.pub_date | date:"Y M d"}}
+               </p>
+           </div>
+     {% endfor %}
+{% endblock %}

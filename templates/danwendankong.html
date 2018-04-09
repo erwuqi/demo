@@ -1,0 +1,35 @@
+{% extends 'basic.html' %}
+{% load staticfiles %}
+{% block title %}广州翔捷制冷设备有限公司{% endblock %}
+{% block headmessage %}
+    {{new.title}}
+{% endblock %}
+{% block content %}
+<div class="one_product_center">
+    <p class="product_name">单温单控冷水机</p>
+    <hr class="line_one" />
+    <hr class="line_two" />
+    <div class="product_img"><img src="{% static 'img/pro1danwendankong.jpg' %}" /></div>
+    <p class="proc_title">产品概述：</p>
+    <div class="proc_desc">
+        <p>
+        XJ-S系列冷水机是一种吸收式循环达到制冷效果的机器，是先向机内水箱注入一定量的水，通过冷水机制冷系统将水冷却，
+        再由水泵将低温冷却水送入需冷却的设备，将热量带走后温度升高再回流到水箱，达到冷却的作用。
+    </p>
+    </div>
+    <p class="proc_title">产品特点：</p>
+    <div class="proc_desc">
+        <p>1.先进的制冷技术，体积小，外形美观。</p>
+        <p>2.采用微电脑版控制器，多种精度可以选择（±0.1，±0.5，±1）。</p>
+        <p>3.各种保护和故障功能全部展示。</p>
+        <p>4.具备手动添加水，适合纯净水，蒸馏水杜绝二次污染。</p>
+        <p>5.最环保的无氟冷媒。</p>
+        <p>6.噪音低、控温精度高、质量稳定，可靠性高。</p>
+        <p>7.操作简单，可24小时连续长期运转。</p>
+        <p>8.系统水温，水流，故障信号报警输出。</p>
+    </div>
+    <p class="proc_title">型号：</p>
+    <div class="product_img"><img src="{% static 'img/sheet.png' %}" /></div>
+
+</div>
+{% endblock %}

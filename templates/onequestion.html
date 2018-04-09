@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% block title %}广州翔捷制冷设备有限公司{% endblock %}
+{% block headmessage %}
+    {{question.title}}
+{% endblock %}
+{% block content %}
+<article>
+    {{question.content | safe }}
+</article>
+{% endblock %}
+{% block pub_info %}
+发布时间：{{ question.pub_date | date:"Y M d"}} &nbsp;&nbsp;
+文章来源：{{ question.source}} &nbsp;&nbsp;
+编   辑：{{ question.editor}}
+{% endblock %}

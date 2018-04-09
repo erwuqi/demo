@@ -1,0 +1,29 @@
+{% extends 'basic.html' %}
+{% load staticfiles %}
+{% block title %}广州翔捷制冷设备有限公司{% endblock %}
+{% block headmessage %}
+    {{new.title}}
+{% endblock %}
+{% block content %}
+<div class="one_product_center">
+    <p class="product_name">机柜空调</p>
+    <hr class="line_one" />
+    <hr class="line_two" />
+    <div class="product_img"><img src="{% static 'img/haixianji.jpg' %}" /></div>
+    <p class="proc_title">产品概述：</p>
+    <div class="proc_desc">
+        <p>
+            海鲜机，（又名海鲜冷水机），用于海鲜养殖等温度控制 系统，被广泛用于海鲜池、鱼缸的制冷制热上，是一个水 温控制系统，保持一定的温度，
+            让鱼儿生长。海鲜机操作 简单，机组结构紧凑，性能稳定，机组超常压力密封试验， 各部件防腐性能特佳，可根据其使用功率大小分为很多型 号。
+        </p>
+    </div>
+    <p class="proc_title">产品特点：</p>
+    <div class="proc_desc">
+        <p>1.采用超静音设计冷水机组适用淡海水，用于酒店、宾馆、饭店、鲜海市场、水族馆、水产养殖场，对鱼池进行水温调节和控制适用于工业设备降温（可定制）使用方面广等优点。</p>
+        <p>2.采用高品质工业纯钛制作热交换器，抗腐蚀能力强，淡海水及酸碱液体皆可适应。</p>
+        <p>3.采用等原装压缩机，低能耗，低噪音，高能效比。</p>
+        <p>4.采用温控一体化技术、操作技术简单方便，既有断电温度记忆系统，能够有效确断电后重新来电自动 按照原设定温度继续工作。</p>
+        <p>5.性价比高，质量好，可按客户要求定做机型。</p>
+    </div>
+</div>
+{% endblock %}

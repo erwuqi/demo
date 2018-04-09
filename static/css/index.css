@@ -1,0 +1,381 @@
+@media screen and (min-width:1025px){
+/*总体框架通用样式*/
+body{margin:auto;padding:auto;align:center;}
+li{list-style:none;}
+body, ul, li, h1, h2, h3, h4, h5, h6, p,form, dl, dt, dd { margin: 0px; padding: 0px;font-size: 12px; font-weight: normal;}
+
+/*头部样式*/
+#header{padding:auto;width:80%;height:100px;margin:10px auto 0px auto;position:relative;}
+#header .logo img{width:380px;height:100px;float:left;}
+#header .QRcode{float:right;}
+#header{width:80%;height:100px;margin-bottom:2px;}
+
+/*导航条样式*/
+#menu{width:100%;height:50px;background-color:#3c64f7;overflow:hidden;position:relative;}
+#menu ul{list-style:none;margin:0px;padding:0px 150px 0px 150px;}
+#menu ul li{display:inline;float:left;width:14.28%;height:50px;text-align:center;line-height:50px;}
+#menu ul li a{display:block;text-decoration:none;font-size:18px;color:#fff;}
+#menu .current{ background:#ccc;font-weight:bold;}
+
+
+/*轮播图样式*/
+
+.slider {position: relative;width: 100%;max-width:1920px;height:450px;margin: 0px auto;}
+.slide-viewer {
+    position: relative; /* needed for IE7 */
+    overflow: hidden;
+    width:100%;
+    height: 483px;
+    }
+
+.slide-group {width: 100%;height: 100%;position: relative;}
+.slide-group img{width:100%;height:100%;}
+.slide {width: 100%;height: 100%;display: none;position: absolute;}
+.slide:first-child {display: block;}
+
+/********** BUTTONS **********/
+.slide-buttons {text-align: center;width:100%;height:30px;position:absolute;bottom:20px;}
+.slide-btn {width:20px;height:20px;border-radius:10px;margin-right:10px;background:#3c64f7;}
+.slide-btn.active, .slide-btn:hover {background: #fff;cursor: pointer;}
+
+
+/*新闻单页样式*/
+.basic_content{width:100%;height:auto;margin:0px auto;}
+.basic_content .panel-heading{font-size:30px;text-align:center;line-height:50px;}
+.basic_content .pub_info{font-size:12px;text-align:center;line-height:20px;margin-bottom:30px;}
+.basic_content .panel-body p{font-size:14px;}
+
+
+/*content主体样式*/
+.container{width:80%;height:700px;margin:45px auto 0px auto;position:relative;}
+a{text-decoration:none;}
+
+/*产品分类*/
+.left_container{width:20%;height:100%;position:relative;border:1px solid #ccc;float:left;}
+.category{width:100%;height:350px;}
+.cate_title{width:100%;height:40px;background:#3c64f7;border-radius:2px;}
+.cate_title p{color:#fff;font-size:20px;line-height:40px;text-indent:10px;}
+.cate_list{width:80%;padding:0px 15px;margin-top:10px;}
+.cate_list div{margin:10px auto;}
+.cate_list img{width:20px;height:20px;}
+.cate_list p{font-size:16px;display:inline-block;text-indent:8px;}
+.cate_list a{text-decoration:none;color:#000;}
+
+/*联系我们*/
+.contact{width:100%;height:350px;}
+.cont_title{width:100%;height:40px;background:#3c64f7;border-radius:2px;}
+.cont_title p{color:#fff;font-size:20px;line-height:40px;text-indent:10px;}
+.contact .info{margin:10px 10px;}
+.contact .info p{font-size:16px;padding:5px 5px;}
+
+/*产品推荐*/
+.recommendation{width:78%;height:100%;margin-left:10px;border:1px solid #ccc;float:left;position:relative;overflow:hidden;}
+.recom_title{width:100%;height:40px;background:#3c64f7;border-radius:2px;}
+.recom_title p{color:#fff;font-size:20px;line-height:40px;text-indent:10px;}
+.recommendation .reco_up{width:100%;height:50%;margin-top:5px;}
+.recommendation .reco_down{width:100%;height:50%;margin-top:-15px;}
+.recommendation .reco_up div{width:31%;height:240px;margin:auto 5px;border:1px solid #ccc;float:left;}
+.recommendation .reco_down div{width:31%;height:240px;margin:auto 5px;border:1px solid #ccc;float:left;}
+.recommendation img{width:100%;height:80%;}
+.pro_title{font-size:16px;text-align:center;color:#000;}
+.pro_desc{font-size:10px;margin-top:25px;overflow:hidden;}
+
+
+/*service样式*/
+.service{width:80%;height:780px;margin:5px auto 0px auto;}
+.service_middle_line,.hangye_middle_line{width:100%;height:50px;background:#3c64f7;text-align:center;}
+.service_middle_line p,.hangye_middle_line p{font-size:22px;color:#fff;line-height:50px;}
+.service_top h2,.service_bottom h2{font-size:28px;font-weight:bold;margin:20px auto auto 20px;}
+.service_top h3,.service_bottom h3{font-size:20px;font-weight:bold;margin:auto auto auto 40px;}
+.service_top p{font-size:14px;line-height:30px;margin:auto auto auto 50px;}
+.service_bottom p{font-size:14px;line-height:20px;margin:auto auto auto 50px;}
+.service_top_desc,.service_bottom_desc{float:left;margin-left:10px;}
+.service_right,.service_left{float:left;}
+.service_right img,.service_left img{width:250px;height:350px;}
+.hangye{width:80%;height:680px;margin:130px auto 0px auto;}
+
+
+
+
+/*新闻中心*/
+.news_box_center{width:80%;height:500px;margin:0px auto;position:relative;}
+a{text-decoration:none;}
+.news_center{width:100%;height:500px;}
+.news_box_title{width:100%;height:40px;text-align:center;}
+.news_box_title p{font-size:28px;line-height:40px;text-align:center;}
+.news_box_content{width:95%;height:460px;padding:30px;margin-top:10px;position:relative;overflow:auto;}
+.new_title a{font-size:20px;font-weight:bold;color:#000;}
+.new_content{font-size:14px;line-height:30px;}
+.news_box_title .line {display: inline-block;width: 42%;border-top: 2px solid #ccc ;}
+.news_box_title  .title {color: #686868;vertical-align: middle;font-size:26px;}
+
+/*footer_container*/
+.footer_container{width:100%;height:250px;position:relative;}
+.links{width:80%;height:80px;background:#ccc;margin:50px auto 5px auto;}
+.links .links_div1 p{color:#fff;font-size:25px;line-height:25px;padding-top:10px;padding-left:10px;}
+.links .links_div2 p{color:#fff;font-size:16px;line-height:80px;}
+.links div{float:left;}
+.footer_menu{width:70%;height:auto;margin:0px auto;}
+.footer_menu p{color:#fff;font-size:14px;line-height:50px;}
+.footer{width:100%;height:220px;background:#3c64f7;text-align:center;padding-top:20px;}
+.footer_info p{color:#fff;font-size:14px;line-height:50px;}
+.footer_menu a,.links_div2 a{color:#fff;}
+
+/*客服*/
+#custmer{width:90px;height:180px;position:fixed;right:30px;top:400px;z-index:12;}
+
+}
+
+@media screen and (max-width:1024px) and (min-width:768px) {
+/*总体框架通用样式*/
+body{margin:auto;padding:auto;align:center;}
+li{list-style:none;}
+body, ul, li, h1, h2, h3, h4, h5, h6, p,form, dl, dt, dd { margin: 0px; padding: 0px;font-size: 12px; font-weight: normal;}
+
+/*头部样式*/
+#header{padding:auto;width:80%;height:80px;margin:8px auto 2px auto;position:relative;}
+#header .logo img{width:300px;height:80px;float:left;}
+#header .title p{font-size:18px;float:left;line-height:80px;}
+#header .QRcode{width:200px;height:100px;float:right;margin-right:100px;}
+
+/*导航条样式*/
+#menu{width:100%;height:50px;background-color:#3c64f7;overflow:hidden;position:relative;}
+#menu ul{list-style:none;margin:0px;padding:0px 50px 0px 50px;}
+#menu ul li{display:inline;float:left;width:14.28%;height:50px;text-align:center;line-height:50px;}
+#menu ul li a{display:block;text-decoration:none;font-size:16px;color:#fff;}
+
+
+/*轮播图样式*/
+
+.slider {position: relative;width: 100%;max-width:1024px;height:300px;margin: 0px auto;}
+.slide-viewer {
+    position: relative; /* needed for IE7 */
+    overflow: hidden;
+    width:100%;
+    height: 300px;
+    }
+
+.slide-group {width: 100%;height: 100%;position: relative;}
+.slide-group img{width:100%;height:100%;}
+.slide {width: 100%;height: 100%;display: none;position: absolute;}
+.slide:first-child {display: block;}
+
+/********** BUTTONS **********/
+.slide-buttons {text-align: center;width:100%;height:30px;position:absolute;bottom:15px;}
+.slide-btn {width:14px;height:14px;border-radius:7px;margin-right:10px;background:#3c64f7;}
+.slide-btn.active, .slide-btn:hover {background: #fff;cursor: pointer;}
+
+
+/*新闻单页样式*/
+.basic_content{width:100%;height:auto;margin:0px auto;}
+.basic_content .panel-heading{font-size:30px;text-align:center;line-height:50px;}
+.basic_content .pub_info{font-size:12px;text-align:center;line-height:20px;margin-bottom:30px;}
+.basic_content .panel-body p{font-size:14px;}
+
+
+/*content主体样式*/
+.container{width:85%;height:440px;margin:5px auto 0px auto;position:relative;}
+a{text-decoration:none;}
+
+/*产品分类*/
+.left_container{width:26%;height:100%;position:relative;border:1px solid #ccc;float:left;}
+.category{width:100%;height:230px;}
+.cate_title{width:100%;height:30px;background:#3c64f7;border-radius:2px;}
+.cate_title p{color:#fff;font-size:16px;line-height:30px;text-indent:5px;}
+.cate_list{width:80%;padding:0px 5px;margin-top:8px;}
+.cate_list div{margin:8px auto;}
+.cate_list img{width:15px;height:15px;}
+.cate_list p{font-size:14px;display:inline-block;text-indent:5px;}
+.cate_list a{text-decoration:none;color:#000;}
+
+/*联系我们*/
+.contact{width:100%;height:210px;}
+.cont_title{width:100%;height:30px;background:#3c64f7;border-radius:2px;}
+.cont_title p{color:#fff;font-size:16px;line-height:30px;text-indent:5px;}
+.contact .info{margin:8px;}
+.contact .info p{font-size:12px;padding:3px;}
+
+/*产品推荐*/
+.recommendation{width:72%;height:100%;margin-left:10px;border:1px solid #ccc;float:left;position:relative;overflow:hidden;}
+.recom_title{width:100%;height:30px;background:#3c64f7;border-radius:2px;}
+.recom_title p{color:#fff;font-size:16px;line-height:30px;text-indent:5px;}
+.recommendation .reco_up{width:100%;height:50%;margin-top:3px;position:}
+.recommendation .reco_down{width:100%;height:50%;margin-top:-10px;}
+.recommendation .reco_up div{width:31%;height:180px;margin:auto 3px;border:1px solid #ccc;float:left;}
+.recommendation .reco_down div{width:31%;height:180px;margin:auto 3px;border:1px solid #ccc;float:left;}
+.recommendation img{width:80%;height:60%;}
+.pro_title{font-size:14px;text-align:center;color:#000;}
+.pro_desc{visibility:hidden;}
+
+
+/*service样式*/
+.service{width:80%;height:680px;margin:5px auto 0px auto;}
+.service_middle_line,.hangye_middle_line{width:100%;height:50px;background:#3c64f7;text-align:center;}
+.service_middle_line p,.hangye_middle_line p{font-size:18px;color:#fff;line-height:50px;}
+.service_top h2,.service_bottom h2{font-size:22px;font-weight:bold;margin:10px auto auto 10px;}
+.service_top h3,.service_bottom h3{font-size:16px;font-weight:bold;margin:auto auto auto 20px;}
+.service_top p{font-size:12px;line-height:16px;margin:auto auto auto 30px;}
+.service_bottom p{font-size:12px;line-height:16px;margin:auto auto auto 30px;}
+.service_top_desc,.service_bottom_desc{float:left;margin-left:10px;}
+.service_right,.service_left{float:left;}
+.service_right img,.service_left img{width:180px;height:220px;}
+.hangye{width:80%;height:500px;margin:auto auto;}
+.hangye img{width:100%;height:80%;margin:auto auto;}
+
+
+/*新闻中心*/
+.news_box_center{width:85%;height:400px;margin:0px auto;position:relative;}
+a{text-decoration:none;}
+.news_center{width:100%;height:400px;}
+.news_box_title{width:100%;height:30px;text-align:center;}
+.news_box_title p{font-size:20px;line-height:30px;text-align:center;}
+.news_box_content{width:95%;height:360px;padding:10px;margin-top:8px;position:relative;overflow:auto;}
+.new_title a{font-size:16px;font-weight:bold;color:#000;}
+.new_content{font-size:14px;line-height:20px;}
+.news_box_title .line {display: inline-block;width: 33%;border-top: 2px solid #ccc ;}
+.news_box_title  .title {color: #686868;vertical-align: middle;font-size:22px;}
+
+/*footer_container*/
+.footer_container{width:100%;height:180px;position:relative;}
+.links{width:85%;height:60px;background:#ccc;margin:30px auto 5px auto;}
+.links .links_div1 p{color:#fff;font-size:20px;line-height:20px;padding-top:8px;padding-left:8px;}
+.links .links_div2 p{color:#fff;font-size:14px;line-height:80px;}
+.links div{float:left;}
+.footer_menu{width:80%;height:auto;margin:0px auto;}
+.footer_menu p{color:#fff;font-size:14px;line-height:50px;}
+.footer{width:100%;height:220px;background:#3c64f7;text-align:center;padding-top:15px;}
+.footer_info p{color:#fff;font-size:14px;line-height:30px;}
+.footer_menu a,.links_div2 a{color:#fff;}
+
+/*客服*/
+#custmer{width:80px;height:130px;position:fixed;right:0px;top:350px;z-index:12;}
+#custmer img{width:80px;height:130px;}
+
+}
+
+@media screen and (max-width:767px){
+/*总体框架通用样式*/
+body{margin:auto;padding:auto;align:center;}
+li{list-style:none;}
+body, ul, li, h1, h2, h3, h4, h5, h6, p,form, dl, dt, dd { margin: 0px; padding: 0px;font-size: 12px; font-weight: normal;}
+
+/*头部样式*/
+#header{padding:auto;width:100%;height:60px;margin:4px auto 1px auto;position:relative;}
+#header .logo img{width:150px;height:40px;float:left;}
+#header .title p{font-size:12px;float:left;line-height:60px;}
+#header .QRcode{width:80px;height:40px;float:right;margin-right:100px;}
+#header .QRcode img{width:180px;height:60px;}
+
+/*导航条样式*/
+#menu{width:100%;height:40px;background-color:#3c64f7;overflow:hidden;position:relative;}
+#menu ul{list-style:none;margin:0px;padding:0px 5px 0px 5px;}
+#menu ul li{display:inline;float:left;width:14.28%;height:40px;text-align:center;line-height:40px;}
+#menu ul li a{display:block;text-decoration:none;font-size:12px;color:#fff;}
+
+
+/*轮播图样式*/
+
+.slider {position: relative;width: 100%;max-width:700px;height:130px;margin: 0px auto;}
+.slide-viewer {
+    position: relative; /* needed for IE7 */
+    overflow: hidden;
+    width:100%;
+    height: 130px;
+    }
+
+.slide-group {width: 100%;height: 100%;position: relative;}
+.slide-group img{width:100%;height:100%;}
+.slide {width: 100%;height: 100%;display: none;position: absolute;}
+.slide:first-child {display: block;}
+
+/********** BUTTONS **********/
+.slide-buttons {text-align: center;width:100%;height:20px;position:absolute;bottom:5px;}
+.slide-btn {width:8px;height:4px;margin-right:5px;background:#3c64f7;}
+.slide-btn.active, .slide-btn:hover {background: #fff;cursor: pointer;}
+
+
+/*新闻单页样式*/
+.basic_content{width:100%;height:auto;margin:0px auto;}
+.basic_content .panel-heading{font-size:30px;text-align:center;line-height:50px;}
+.basic_content .pub_info{font-size:12px;text-align:center;line-height:20px;margin-bottom:30px;}
+.basic_content .panel-body p{font-size:14px;}
+
+
+/*content主体样式*/
+.container{width:100%;height:360px;margin:5px auto 0px auto;position:relative;}
+a{text-decoration:none;}
+
+/*产品分类*/
+.left_container{width:30%;height:100%;position:relative;border:1px solid #ccc;float:left;overflow:hidden;}
+.category{width:100%;height:180px;overflow:auto;}
+.cate_title{width:100%;height:26px;background:#3c64f7;border-radius:2px;}
+.cate_title p{color:#fff;font-size:12px;line-height:26px;text-indent:5px;}
+.cate_list{width:80%;padding:0px 5px;margin-top:8px;}
+.cate_list div{margin:8px auto;}
+.cate_list img{width:6px;height:6px;}
+.cate_list p{font-size:5px;display:inline-block;}
+.cate_list a{text-decoration:none;color:#000;}
+
+/*联系我们*/
+.contact{width:100%;height:180px;overflow:auto;}
+.cont_title{width:100%;height:26px;background:#3c64f7;border-radius:2px;}
+.cont_title p{color:#fff;font-size:12px;line-height:26px;text-indent:5px;}
+.contact .info{margin:8px;overflow:hidden;}
+.contact .info p{font-size:4px;padding:1px;}
+
+/*产品推荐*/
+.recommendation{width:68%;height:100%;margin-left:3px;border:1px solid #ccc;float:left;position:relative;overflow:hidden;}
+.recom_title{width:100%;height:26px;background:#3c64f7;border-radius:2px;}
+.recom_title p{color:#fff;font-size:12px;line-height:26px;text-indent:5px;}
+.recommendation .reco_up{width:100%;height:50%;margin-top:3px;position:}
+.recommendation .reco_down{width:100%;height:50%;margin-top:-10px;}
+.recommendation .reco_up div{width:30%;height:120px;margin:auto 2px;border:1px solid #ccc;float:left;}
+.recommendation .reco_down div{width:30%;height:120px;margin:auto 2px;border:1px solid #ccc;float:left;}
+.recommendation img{width:80%;height:50%;}
+.pro_title p{font-size:10px;text-align:center;color:#000;margin-top:80px;}
+.pro_desc{visibility:hidden;}
+
+
+/*service样式*/
+.service{width:100%;height:750px;margin:5px auto 0px auto;}
+.service_middle_line,.hangye_middle_line{width:100%;height:40px;background:#3c64f7;text-align:center;}
+.service_middle_line p,.hangye_middle_line p{font-size:16px;color:#fff;line-height:40px;}
+.service_top h2,.service_bottom h2{font-size:16px;font-weight:bold;margin:10px auto auto 10px;}
+.service_top h3,.service_bottom h3{font-size:10px;font-weight:bold;margin:auto auto auto 20px;}
+.service_top p{font-size:8px;line-height:12px;margin:auto auto auto 10px;}
+.service_bottom p{font-size:8px;line-height:12px;margin:auto auto auto 10px;}
+.service_top_desc,.service_bottom_desc{float:left;margin-left:10px;}
+.service_right,.service_left{float:left;}
+.service_right img,.service_left img{width:130px;height:180px;}
+.hangye{width:100%;height:380px;margin:auto auto;}
+.hangye img{width:100%;height:100%;}
+
+
+/*新闻中心*/
+.news_box_center{width:100%;height:300px;margin:5px auto auto auto;position:relative;}
+a{text-decoration:none;}
+.news_center{width:100%;height:400px;}
+.news_box_title{width:100%;height:30px;text-align:center;}
+.news_box_title p{font-size:14px;line-height:30px;text-align:center;}
+.news_box_content{width:95%;height:360px;padding:10px;margin-top:8px;position:relative;overflow:auto;}
+.new_title a{font-size:14px;font-weight:bold;color:#000;}
+.new_content{font-size:18px;line-height:16px;}
+.news_box_title .line {display: inline-block;width: 23%;border-top: 2px solid #ccc ;}
+.news_box_title  .title {color: #686868;vertical-align: middle;font-size:18px;}
+
+/*footer_container*/
+.footer_container{width:100%;height:130px;position:relative;}
+.links{width:80%;height:40px;background:#ccc;margin:100px auto 5px auto;}
+.links .links_div1 p{color:#fff;font-size:14px;line-height:20px;padding-top:1px;padding-left:8px;}
+.links .links_div2 p{color:#fff;font-size:12px;line-height:40px;}
+.links div{float:left;}
+.footer_menu{width:100%;height:auto;margin:0px auto;}
+.footer_menu p{color:#fff;font-size:8px;line-height:50px;}
+.footer{width:100%;height:200px;background:#3c64f7;text-align:center;padding-top:15px;}
+.footer_info p{color:#fff;font-size:8px;line-height:30px;}
+.footer_menu a,.links_div2 a{color:#fff;}
+
+/*客服*/
+#custmer{width:50px;height:80px;position:fixed;right:0px;top:200px;z-index:12;}
+#custmer img{width:50px;height:80px;}
+}

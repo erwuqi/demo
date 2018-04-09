@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>广州翔捷制冷设备有限公司</title>
+    <link rel="stylesheet" href="{% static 'css/index.css' %}" >
+    <link rel="stylesheet" href="{% static 'css/base.css' %}" >
+    <script type="text/javascript" src="{% static 'js/jquery-1.11.0.min.js' %}"></script>
+</head>
+<body>
+
+   <div id="header">
+        <div class="logo"><img src="{% static 'img/logo.png' %}" alt="翔捷官网" /></div>
+        <div class="title"><p>广州翔捷制冷设备有限公司</p></div>
+        <div class="QRcode"><img src="{% static 'img/qrcode.png' %}" /></div>
+   </div>
+   <div id="menu">
+       <ul>
+           <li><a href="/">首页</a></li>
+           <li><a href="/product.html">产品中心</a></li>
+           <li><a href="/news.html">翔捷动态</a></li>
+           <li><a href="/honor.html">荣誉证书</a></li>
+           <li><a href="/about.html">关于翔捷</a></li>
+           <li><a href="/question.html">常见问题</a></li>
+           <li><a href="/contact.html">联系我们</a></li>
+       </ul>
+   </div>
+
+
+   <div id="custmer">
+       <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=2063872062&site=qq&menu=yes">
+           <img border="0" src="{% static 'img/kefu.png' %}":2063872062:41" alt="点击这里给我发消息" title="点击这里给我发消息">
+       </a>
+   </div>
+
+
+   <div id="base_container">
+       <div class="left_base_container">
+            <div class="category">
+                <div class="cate_title"><a href="#"><p>产品分类</p></a></div>
+                <div class="cate_list">
+                    <div><a href="/danwendankong.html"><img src="{% static 'img/categorylogo.png' %}" /><p>单温单控冷水机</p></a></div>
+                    <div><a href="/shuangwenshuangkong.html"><img src="{% static 'img/categorylogo.png' %}" /><p>双温双控冷水机</p></a></div>
+                    <div><a href="/hengwena.html"><img src="{% static 'img/categorylogo.png' %}" /><p>恒温冷水机Ⅰ系</p></a></div>
+                    <div><a href="/hengwenb.html"><img src="{% static 'img/categorylogo.png' %}" /><p>恒温冷水机Ⅱ系</p></a></div>
+                    <div><a href="/jiguikongtiao.html"><img src="{% static 'img/categorylogo.png' %}" /><p>单机柜空调</p></a></div>
+                    <div><a href="/haixianji.html"><img src="{% static 'img/categorylogo.png' %}" /><p>海鲜机</p></a></div>
+                </div>
+            </div>
+            <div class="contact">
+                <div class="cont_title"><p>联系我们</p></div>
+                <div class="info">
+                    <p>广州翔捷制冷设备有限公司</p>
+                    <p>电 话：020-3726 7604</p>
+                    <p>传 真：020-3726 7604 转 810</p>
+                    <p>地 址：广州市天河区华观中路天虹科技园I栋113房</p>
+                    <p>邮 编：528400</p>
+                </div>
+            </div>
+       </div>
+       <div class="right_base_container">
+            <div class="basic_news_content">
+                <div class="panel-heading">
+                    {% block headmessage %}{% endblock %}
+                </div>
+                <div class="pub_info">
+                    {% block pub_info %}{% endblock %}
+                </div>
+                <div class="single_line"><span style="white-space:pre;">  </span><span class="line"></span></div>
+                <div class="panel-body">
+                    {% block content %}{% endblock %}
+                </div>
+            </div>
+            <div id="bdshare" class="bdshare_t bds_tools get-codes-bdshare">
+                <p>分享到</p>
+                <a class="bds_qzone"></a>
+                <a class="bds_tsina"></a>
+                <a class="bds_tqq"></a>
+                <a class="bds_renren"></a>
+                <span class="bds_more">更多</span>
+            </div>
+       </div>
+       <div style="clear:both"></div>
+   </div>
+
+   <div class="footer_container">
+        <div class="links">
+           <div class="links_div1">
+               <p>友情</p>
+               <p>链接</p>
+           </div>
+           <div class="links_div2">
+               <p>
+                   &nbsp;&nbsp;&nbsp;&nbsp;|
+                   &nbsp;<a href="/product.html">激光冷水机</a>
+                   &nbsp;&nbsp; <a href="/product.html">冷水机</a>
+                   <a href="/product.html">工业水冷式冷水机</a>
+               </p>
+           </div>
+        </div>
+        <div class="footer">
+           <div class="footer_menu">
+               <p>
+                   <a href="/">首页</a> |
+                   <a href="/product.html">产品中心</a> |
+                   <a href="/news.html">翔捷动态</a> |
+                   <a href="/honor.html">荣誉证书</a> |
+                   <a href="/about.html">关于翔捷</a> |
+                   <a href="/question.html">常见问题</a> |
+                   <a href="/contact.html">联系我们</a>
+               </p>
+               <hr  />
+           </div>
+           <div class="footer_info">
+               <p>版权所有 © 广州翔捷制冷设备有限公司       地址：广州市天河区华观中路天虹科技园 I栋113房</p>
+               <p>座机： 020-3726 7604 传真：020-3726 7604    粤ICP备17038386号</p>
+           </div>
+        </div>
+   </div>
+   <button id="back_to_top" style="width:80px;height:40px;position:fixed;right:0;bottom:0;font-size:14px">回到顶部</button>
+   <script>
+        back_to_top.onclick = function(){
+            document.body.scrollTop = document.documentElement.scrollTop = 0;
+        }
+    </script>
+    <script type="text/javascript" id="bdshare_js" data="type=tools" ></script>
+    <script type="text/javascript" id="bdshell_js"></script>
+    <script type="text/javascript">document.getElementById("bdshell_js").src = "http://bdimg.share.baidu.com/static/js/shell_v2.js?cdnversion=" + Math.ceil(new Date()/3600000);</script>
+</body>
+</html>

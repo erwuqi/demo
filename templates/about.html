@@ -1,0 +1,17 @@
+{% extends 'basic.html' %}
+{% load staticfiles %}
+{% block title %}广州翔捷制冷设备有限公司{% endblock %}
+{% block headmessage %}
+    {{new.title}}
+{% endblock %}
+{% block content %}
+<div class="about_us">
+    <p class="about_title">广州翔捷制冷设备有限公司</p>
+    <p class="about_desc">
+        广州翔捷制冷设备有限公司是一家只专注于制冷产品研发、生产的设备生产商。从成立之日至今一直专业设计、研发和制造工业制冷系统的现代环保型企业。
+        翔捷冷水机广泛应用于食品，医药，生物，化工，电子，实验室等各行业。翔捷冷水机系列产品型号全面、覆盖领域越来越广泛、以精密高效、智能方便、
+        使用安全、性能稳定和节能环保等多项优势。
+    </p>
+    <div><img src="{% static 'img/logo.png' %}" alt="翔捷制冷" /></div>
+</div>
+{% endblock %}

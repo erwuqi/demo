@@ -1,0 +1,32 @@
+{% extends 'basic.html' %}
+{% load staticfiles %}
+{% block title %}广州翔捷制冷设备有限公司{% endblock %}
+{% block headmessage %}
+    {{new.title}}
+{% endblock %}
+{% block content %}
+<div class="one_product_center">
+    <p class="product_name">机柜空调</p>
+    <hr class="line_one" />
+    <hr class="line_two" />
+    <div class="product_img"><img src="{% static 'img/jiguikongtiao.jpg' %}" /><p class="proc_title">型号：XJ-K-1100W</p></div>
+    <p class="proc_title">产品概述：</p>
+    <div class="proc_desc">
+        <p>
+            机柜空调是能够对电气控制柜内空气的温度、相对湿度、流动速度进行调节的装置，主要服务的对象是电气、电子或机械元件。
+            压缩式机柜空调通过压缩机将冷媒压缩、冷凝放热，再蒸发吸热来降低环境的温度，当安装于控制柜上时，可在密闭的情况下，
+            将柜内的热量计向柜外转移，从而避免了外界环境中的高温粉尘、腐蚀性气体进入控制柜内。而控制柜内的温度、湿度始终恒定理想状态中，
+            使得电子元器件的使用寿命和工作稳定性得到了保证。
+        </p>
+    </div>
+    <p class="proc_title">产品特点：</p>
+    <div class="proc_desc">
+        <p>1.内外完全独立的密闭式空气循环，防止尘埃、油雾、潮气进入电器箱内部。</p>
+        <p>2.有效地控制电器箱内的温度、湿度，防止电器元件过早老化失效。向内湿度可控制在RH40%左右。</p>
+        <p>3.控制器操作方便、功能齐全，温度设置可根据需要进行调节。</p>
+        <p>4.提供多种保护功能和无源报警端子，将故障信号传输给机床的CNC数控系统。</p>
+        <p>5.带加热功能的产品采用先进的PTC加热元件，低温环境自动升温，具有良好的自控温特性。</p>
+        <p>6.产品安装方式有壁挂式、嵌入式、门装式，每种安装方式有多种规格供选择。</p>
+    </div>
+</div>
+{% endblock %}

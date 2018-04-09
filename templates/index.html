@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>广州翔捷制冷设备有限公司</title>
+    <link rel="stylesheet" href="{% static 'css/index.css' %}" >
+    <script type="text/javascript" src="{% static 'js/jquery-1.11.0.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/menu.js' %}"></script>
+
+    <script type="text/javascript">
+        var caution=false
+        function setCookie(name,value,expires,path,domain,secure)
+        {
+         var curCookie=name+"="+escape(value) +
+         ((expires)?";expires="+expires.toGMTString() : "") +
+         ((path)?"; path=" + path : "") +
+         ((domain)? "; domain=" + domain : "") +
+         ((secure)?";secure" : "")
+         if(!caution||(name + "=" + escape(value)).length <= 4000)
+         {
+         document.cookie = curCookie
+         }
+         else if(confirm("Cookie exceeds 4KB and will be cut!"))
+         {
+         document.cookie = curCookie
+         }
+        }
+        function getCookie(name)
+        {
+         var prefix = name + "="
+         var cookieStartIndex = document.cookie.indexOf(prefix)
+         if (cookieStartIndex == -1)
+         {
+         return null
+         }
+         var cookieEndIndex=document.cookie.indexOf(";",cookieStartIndex+prefix.length)
+         if(cookieEndIndex == -1)
+         {
+         cookieEndIndex = document.cookie.length
+         }
+         return unescape(document.cookie.substring(cookieStartIndex+prefix.length,cookieEndIndex))
+        }
+        function deleteCookie(name, path, domain)
+        {
+         if(getCookie(name))
+         {
+         document.cookie = name + "=" +
+         ((path) ? "; path=" + path : "") +
+         ((domain) ? "; domain=" + domain : "") +
+         "; expires=Thu, 01-Jan-70 00:00:01 GMT"
+         }
+        }
+        function fixDate(date)
+        {
+         var base=new Date(0)
+         var skew=base.getTime()
+         if(skew>0)
+         {
+         date.setTime(date.getTime()-skew)
+         }
+        }
+        var now=new Date()
+        fixDate(now)
+        now.setTime(now.getTime()+365 * 24 * 60 * 60 * 1000)
+        var visits = getCookie("counter")
+        if(!visits)
+        {
+         visits=1;
+        }
+        else
+        {
+         visits=parseInt(visits)+1;
+        }
+        setCookie("counter", visits, now)
+        document.write("您是到访的第" + visits + "位用户！")
+    </script>
+</head>
+<body>
+
+   <div id="header">
+        <div class="logo"><img src="{% static 'img/logo.jpg' %}" alt="翔捷官网" /></div>
+        <div class="QRcode"><img src="{% static 'img/qrcode.png' %}" /></div>
+   </div>
+   <div id="menu">
+       <ul id="menu_list">
+           <li><a href="/" class="current">首页</a></li>
+           <li><a href="/product.html">产品中心</a></li>
+           <li><a href="/news.html">翔捷动态</a></li>
+           <li><a href="/honor.html">荣誉证书</a></li>
+           <li><a href="/about.html">关于翔捷</a></li>
+           <li><a href="/question.html">常见问题</a></li>
+           <li><a href="/contact.html">联系我们</a></li>
+       </ul>
+   </div>
+
+   <div class="slider">
+        <div class="slide-viewer">
+            <div class="slide-group">
+                <div class="slide slide-1">
+                  <img src="{% static 'img/1.jpg' %}" />
+                </div>
+                <div class="slide slide-2">
+                  <img src="{% static 'img/2.jpg' %}" />
+                </div>
+                <div class="slide slide-3">
+                  <img src="{% static 'img/1.jpg' %}" />
+                </div>
+                <div class="slide slide-4">
+                  <img src="{% static 'img/2.jpg' %}" />
+                </div>
+            </div>
+        </div>
+        <div class="slide-buttons"></div>
+   </div>
+   <script type="text/javascript" src="{% static 'js/readmore.min.js' %}"></script>
+   <script type="text/javascript" src="{% static 'js/slider.js' %}"></script>
+
+   <div id="custmer">
+       <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=2063872062&site=qq&menu=yes">
+           <img border="0" src="{% static 'img/kefu.png' %}":2063872062:41" alt="点击这里给我发消息" title="点击这里给我发消息">
+       </a>
+   </div>
+
+   <div class="container">
+        <div class="left_container">
+            <div class="category">
+                <div class="cate_title"><a href="#"><p>产品分类</p></a></div>
+                <div class="cate_list">
+                    <div><a href="/danwendankong.html"><img src="{% static 'img/categorylogo.png' %}" /><p>单温单控冷水机</p></a></div>
+                    <div><a href="/shuangwenshuangkong.html"><img src="{% static 'img/categorylogo.png' %}" /><p>双温双控冷水机</p></a></div>
+                    <div><a href="/hengwena.html"><img src="{% static 'img/categorylogo.png' %}" /><p>恒温冷水机Ⅰ系</p></a></div>
+                    <div><a href="/hengwenb.html"><img src="{% static 'img/categorylogo.png' %}" /><p>恒温冷水机Ⅱ系</p></a></div>
+                    <div><a href="/jiguikongtiao.html"><img src="{% static 'img/categorylogo.png' %}" /><p>单机柜空调</p></a></div>
+                    <div><a href="/haixianji.html"><img src="{% static 'img/categorylogo.png' %}" /><p>海鲜机</p></a></div>
+                </div>
+            </div>
+            <div class="contact">
+                <div class="cont_title"><p>联系我们</p></div>
+                    <div class="info">
+                    <p>广州翔捷制冷设备有限公司</p>
+                    <p>电 话：020-3726 7604</p>
+                    <p>传 真：020-3726 7604 转 810</p>
+                    <p>地 址：广州市天河区华观中路天虹科技园I栋113房</p>
+                    <p>邮 编：528400</p>
+                </div>
+            </div>
+        </div>
+        <div class="recommendation">
+            <div class="recom_title"><a href="#"><p>翔捷推荐</p></a></div>
+            <div class="reco_up">
+                <div>
+                    <a href="/danwendankong.html"><img src="{% static 'img/pro1danwendankong.jpg' %}" /><p class="pro_title">单温单控冷水机XJ-S-1P</p></a>
+                    <!--<p class="pro_desc">
+                        产品特点:
+                            1.先进的制冷技术，体积小，外形美观。
+                            2.采用微电脑版控制器，多种精度可以选择（±0.1，±0.5，±1）
+                         ......
+                    </p>-->
+                </div>
+                <div>
+                    <a href="/shuangwenshuangkong.html"><img src="{% static 'img/pro21000-3000W.jpg' %}" /><p class="pro_title">双温双控冷水机XJ-D-1000W</p></a>
+                    <!--<p class="pro_desc">
+                        产品特点：
+                            1.采用进口名牌谷轮压缩机，内置安全保护，噪音低，省电耐用，以增加设备的使用寿命。
+                            2.采用高效翅片式冷凝器，具有换热效率高，外加高效外转子风机
+                            ......
+                    </p>-->
+                </div>
+                <div>
+                    <a href="/hengwenb.html"><img src="{% static 'img/hengwenlengshuiji2.jpg' %}" /><p class="pro_title">恒温冷水机XJ-G-1P</p></a>
+                    <!--<p class="pro_desc">
+                        产品特点：
+                            1.	性能稳定，操作简单，维护方便。
+                            2.	循环水控温精度为±0.1℃。
+                            3.	配备电缆线，快速上电使用。
+                            4.	低温自动加热装置......
+                    </p>-->
+                </div>
+            </div>
+            <div class="reco_down">
+                <div>
+                    <a href="/jiguikongtiao.html"><img src="{% static 'img/jiguikongtiao.jpg' %}" /><p class="pro_title">机柜空调XJ-K-1100W</p></a>
+                    <!--<p class="pro_desc">
+                        产品特点:
+                            1.	内外完全独立的密闭式空气循环，防止尘埃、油雾、潮气进入电器箱内部。
+                            2.	有效地控制电器箱内的温度、湿度，防止电器元件过早老化失效......
+                    </p>-->
+                </div>
+                <div>
+                    <a href="/hengwena.html"><img src="{% static 'img/hengwenlengshuiji.jpg' %}" /><p class="pro_title">恒温冷水机XJ-G-600W</p></a>
+                    <!--<p class="pro_desc">
+                        产品特点：
+                            1.	性能稳定，操作简单，维护方便。
+                            2.	循环水控温精度为±0.1℃。
+                            3.	配备电缆线，快速上电使用。
+                            4.	低温自动加热装置......
+                    </p>-->
+                </div>
+                <div>
+                    <a href="/haixianji.html"><img src="{% static 'img/haixianji.jpg' %}" /><p class="pro_title">海鲜机</p></a>
+                    <!--<p class="pro_desc">
+                        产品特点:1.采用超静音设计冷水机组适用淡海水，用于酒店、宾馆、饭店、鲜海市场、水族馆、水产养殖场，
+                        对鱼池进行水温调节和控制......
+                    </p>-->
+                </div>
+            </div>
+        </div>
+   </div>
+
+   <div class="service">
+       <div class="service_middle_line"><p>以科技提高产品质量 以合作扩大企业形象</p></div>
+       <div class="service_top">
+           <div class="service_top_desc">
+               <h2>保证一流质量</h2>
+               <h3>顶级配置 保证最佳用户体验</h3>
+               <p>1、核心部件压缩机采用日本松下，美国谷轮等国际知名品牌</p>
+               <p>2、管路连接系统可根据客户要求来配置高压胶管或者304不锈钢材质</p>
+               <p>3、流体设备采用国内知名品牌的304不锈钢特种泵，或者根据工艺需要采用进口品牌水泵</p>
+               <p>4、微电脑控制，精准稳定操作面板，设计简洁，方便操作</p>
+               <p>5、自带冷却系统、冷却水泵、水箱，移动方便，开机即可使用</p>
+               <p>6、可满足科研用户24小时连续性不间断使用或生产对工艺冷源的需求</p>
+           </div>
+           <div class="service_right"><img src="{% static 'img/right.jpg' %}" /></div>
+       </div>
+       <div class="service_bottom">
+           <div class="service_left"><img src="{% static 'img/left.jpg' %}" /></div>
+           <div class="service_bottom_desc">
+               <h2>保持一级信誉</h2>
+               <h3>产品售后服务</h3>
+               <p>产品质量承诺：</p>
+               <p>①	产品的制造和检测均有质量记录和检测资料。</p>
+               <p>②	对产品性能的检测，我们诚请用户亲临对产品进行全过程、全性能检查，</p>
+               <p>待产品被确认合格后再装箱发货。</p>
+
+               <p>产品价格承诺：</p>
+               <p>在同等竞争条件下，我公司在不以降低产品技术性能、更改产品部件为代价的基础上，</p>
+               <p>真诚以最优惠的价格提供给贵方。</p>
+
+               <p>交货期承诺：</p>
+               <p>产品交货期：按客户要求，若有特殊要求，需提前完工的，我公司可特别组织生产、</p>
+               <p>安装、力争满足用户需求。</p>
+               <p>产品交货时，我公司向用户提供下列文件</p>
+               <p>①	外购件说明书及制造厂家</p>
+               <p>②	提供易损件、备件清单，并附送一定量的备件。</p>
+
+               <p>售后服务承诺：</p>
+               <p>①	整机质量保期一年，压缩机保期五年。</p>
+               <p>②	产品保质期为十二个月，在保修期内供方将免费维修和更换属质量原因损坏的，</p>
+               <p>零部件保修期外零部件的损坏，提供的配件只收成本费，由需方人为因素造成的</p>
+               <p>设备损坏，供方维修或提供的配件均按成本计价。</p>
+               <p>③	异地保修期内如有故障无法上门维修无条件更换新机，厂方承担全部费用。</p>
+               <p>制冷系统正常使用年限约为8年，水泵及电路部分正常使用约为5年。</p>
+           </div>
+       </div>
+   </div>
+   <div class="hangye">
+       <div class="hangye_middle_line"><p>行业应用</p></div>
+       <img src="{% static 'img/hangye.jpg' %}" />
+   </div>
+
+   <div class="news_box_center">
+       <div class="news_box_title">
+          <span style="white-space:pre;">  </span><span class="line"></span>
+          <span style="white-space:pre;">  </span><span class="title">新闻中心</span>
+          <span style="white-space:pre;">  </span><span class="line"></span>
+       </div>
+       <div class="news_box_content">
+          {% block content %}
+             {% for new in news %}
+                 <div class="new_title">
+                     <p><a href="/news/{{new.slug}}">{{new.title}}</a></p>
+                 </div>
+                 <div class="new_content" style="font-size:14px;">
+                     {{ new.content | truncatechars:"500" | safe | striptags }}
+                 </div>
+                 <div class="new_pub_date">
+                     <p style="background:#ccc;width:200px;height:15px;line-height:15px;">
+                        发布时间：{{ new.pub_date | date:"Y M d"}}
+                    </p>
+                 </div>
+             {% endfor %}
+          {% endblock %}
+       </div>
+   </div>
+
+
+   <div class="footer_container">
+        <div class="links">
+           <div class="links_div1">
+               <p>友情</p>
+               <p>链接</p>
+           </div>
+           <div class="links_div2">
+              <p>
+                   &nbsp;&nbsp;&nbsp;&nbsp;|
+                   &nbsp;<a href="/product.html">激光冷水机</a>
+                   &nbsp;&nbsp; <a href="/product.html">冷水机</a>
+                   <a href="/product.html">工业水冷式冷水机</a>
+               </p>
+           </div>
+        </div>
+        <div class="footer">
+           <div class="footer_menu">
+               <p>
+                   <a href="/">首页</a> |
+                   <a href="/product.html">产品中心</a> |
+                   <a href="/news.html">翔捷动态</a> |
+                   <a href="/honor.html">荣誉证书</a> |
+                   <a href="/about.html">关于翔捷</a> |
+                   <a href="/question.html">常见问题</a> |
+                   <a href="/contact.html">联系我们</a>
+               </p>
+               <hr  />
+           </div>
+           <div class="footer_info">
+               <p>版权所有 © 广州翔捷制冷设备有限公司       地址：广州市天河区华观中路天虹科技园 I栋113房</p>
+               <p>座机： 020-3726 7604 传真：020-3726 7604    粤ICP备17038386号</p>
+           </div>
+        </div>
+   </div>
+   <button id="back_to_top" style="width:80px;height:40px;position:fixed;right:0;bottom:0;font-size:14px">回到顶部</button>
+   <script>
+        back_to_top.onclick = function(){
+            document.body.scrollTop = document.documentElement.scrollTop = 0;
+        }
+    </script>
+   <script>
+        window._bd_share_config={
+            "common":{
+                    "bdSnsKey":{},
+                    "bdText":"",
+                    "bdMini":"2",
+                    "bdMiniList":["mshare","weixin","sqq","tsina","qzone","bdysc","renren","tqq","bdxc","kaixin001","tqf","tieba","douban","bdhome","thx","ibaidu","meilishuo","mogujie","diandian","huaban","duitang","hx","fx","youdao","sdo","qingbiji","people","xinhua","mail","isohu","yaolan","wealink","ty","iguba","fbook","twi","linkedin","h163","evernotecn","copy","print"],
+                    "bdPic":"",
+                    "bdStyle":"0","bdSize":"16"
+                },
+                "slide":{
+                    "type":"slide",
+                    "bdImg":"2",
+                    "bdPos":"left",
+                    "bdTop":"400"
+                }};
+                with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
+   </script>
+</body>
+</html>
